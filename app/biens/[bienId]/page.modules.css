@@ -1,0 +1,87 @@
+
+.header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header h1{
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.header button{
+    background: transparent;
+    border:none;
+}
+
+.imgDescription{
+   display: flex;
+   justify-content:  space-between;
+   margin-top: -5rem;
+   height: 100%;
+   padding: 0.8rem 2rem;
+  
+}
+
+
+.container{
+   width: 35%;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   height: 47.4rem;
+
+}
+.container h1{
+    font-weight: 400;
+    font-family: "Inter", sans-serif; 
+}
+.container p{
+    color: rgb(156, 156, 156);
+}
+.prixLieu{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.lieu, .priw{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.image{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 500px;
+}
+.imgPrincipal{
+   width: 700px;
+   height: 100%;
+}
+.items{
+
+   display: flex;
+   justify-content: space-between;
+   width:700px;
+   height: 200px;
+   margin-top: 3.5rem;
+
+}
+
+.items img{
+    max-width: 200px;
+    object-fit:cover;
+  
+}
+
+
+.image img{
+    width:100%;
+    object-fit:cover; 
+    height:100%;
+    
+}
