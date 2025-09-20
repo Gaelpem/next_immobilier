@@ -1,5 +1,4 @@
-import getBienId from "@/lib/biens"
-import styles from "page.modules.css"
+import  { getBienId } from "@/lib/biens"
 
 export default function BienId({params}){
     const {bienId} = params
@@ -8,15 +7,15 @@ export default function BienId({params}){
     return (
       <div>
                
-    <section className={styles.imgDescription}>
+    <section>
 
-<div className={styles.image}>
+<div >
 
-  <div className={classes.imgPrincipal}>
+  <div >
    <img src={bien.image}/>
   </div>
     
-    <div className={classes.items}>
+    <div >
     <img src={bien.image1}  />
     <img src={bien.image2}  />
     <img src={bien.image3}  />
@@ -25,25 +24,25 @@ export default function BienId({params}){
 
  </div>
 
- <div className={classes.container}>
+ <div >
     
-  <div className={classes.descriptions}>
+  <div >
 
-     <h1 className={classes.description}>Descriptions</h1>
+     <h1 >Descriptions</h1>
      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolorem nihil excepturi aut suscipit deleniti, tempora quaerat in dolore facere error laboriosam.</p>
 
   </div>
 
 
 
-  <div className={classes.prixLieu}>
+  <div>
 
-   <div className={classes.lieu}>
+   <div>
      <h1>Lieu</h1>
      <p>{bien.location}</p>
    </div>
 
-   <div className={classes.prix}>
+   <div>
      <h1>Prix</h1>
      <p>{bien.prix}</p>
    </div>
@@ -51,9 +50,9 @@ export default function BienId({params}){
   </div>
 
 
-  <div className={classes.detail}>
+  <div>
      <h1>Détails</h1>
-     <p className={classes.detail}>{bien.detail}</p>
+     <p>{bien.detail}</p>
    </div>
   
 
