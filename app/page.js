@@ -1,34 +1,38 @@
-import  { getBiens } from "@/lib/biens"
-import Link from "next/link"
+
+import styles from './Home.module.css'
+import BiensList from "./component/ BiensList";
+
+
 export default function Home() {
-    const biens = getBiens()
+
   return (
-            <div>
-           <h1>| Seigfried Vigier |</h1>
+
+       <>
+     
+            <section className={styles.section1}>
+
+            <h1>| Seigfried Vigier |</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero molestiae, dolorum ipsam quam nam enim eos perferendis facere saepe tenetur sunt cum vel excepturi voluptatum cumque. Earum eligendi beatae odit.</p>
-            <ul>
-            {biens.map((bien)=>(
-                 <li key={bien.id} >
-                 <div>
-                   <img src={bien.image} alt={bien.location} />
-                 </div>
-     
-                 <div>
-                   
-                  <div>
-                     <h1>Localisation</h1>
-                     <h2>{bien.location}</h2>
-                   </div>
-     
-                   <div >
-                     {bien.description}
-                   </div>
-                    <Link href={`/${bien.id}`}>[voir plus...]</Link>
-                 </div>
-               </li>
-            ))}
-        </ul>
-            </div>
+           </section>
+
+    
+           <section className={styles.section2}>
+        
+
+          <div className={styles.imageWrapper}>
+
+         <img src= "/img1.jpg" alt="image" width={1200} height={800}  />
+         <h1>Studio, Paris</h1>
+         <h3>75010 - rue des petites écuries </h3>
+         </div>
+
+       </section>
+
+       <section className={styles.section3}> 
+       <BiensList/>
+        </section>
+
+            </>
             
   );
 }

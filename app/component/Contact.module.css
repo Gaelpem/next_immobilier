@@ -1,0 +1,83 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 45rem;
+    padding: 8rem 1rem ;
+    background-color: #e5e5e5;
+  }
+.contact h1{
+    font-size: 4rem;
+    font-weight: 500;
+}
+.btnEspace{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btnEspace button{
+    background: transparent;
+    border: none;
+    font-weight: 100;
+    font-size: 2.3rem;
+    margin-top: -8rem;
+}
+
+.contact h2{
+    font-size: 2.5rem;
+    font-weight: 300;
+} 
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.changeColor{
+    color: white;
+}
+
+.inputContainer input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1rem;
+}
+
+.inputContainer input:focus{
+    outline: none;
+    background:none;
+}
+
+
+.btnContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnContainer button{
+    background: transparent;
+    border: none;
+    font-weight: 300;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.btnArrow {
+    display: flex;
+     justify-content: space-between;
+     align-items: center;
+    width: 6.1rem;
+
+}
+
+.btnArrow i{
+    rotate: 30deg;
+    font-size: 1rem;
+}

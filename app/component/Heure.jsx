@@ -1,6 +1,7 @@
 
 "use client"
 import React, { useEffect, useState } from 'react';
+import classes from './Heure.module.css'
 
 
 const Heure = () => {
@@ -38,7 +39,7 @@ const Heure = () => {
 
   // Chaîne finale affichée dans le JSX
      
-  const afficheHeur = `${ht} : ${mt} : ${st}`
+  const afficheHeure = `${ht} : ${mt} : ${st}`
 
   useEffect(()=>{
       handleHour(); // on affiche l'heure une 1ere fois 
@@ -51,7 +52,7 @@ const Heure = () => {
    
     return (
         <div>
-            <h4>{afficheHeur} -  Paris,fr</h4>
+                     <h4 className={classes.heures}>{afficheHeure} - <span className={classes.changeColor}>Paris,fr</span></h4>
         </div>
     );
 };

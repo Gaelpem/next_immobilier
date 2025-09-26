@@ -1,6 +1,6 @@
 "use client"
-
 import React, { useState } from 'react';
+import classes from "./Contact.module.css"
 
 const Contact = ({onClose}) => {
 
@@ -24,13 +24,15 @@ const Contact = ({onClose}) => {
 
     return (
 
-         <section >
-           <div>
+         <section className={classes.contact}>
 
+           <div className={classes.btnEspace}>
              <div></div>
-             <button onClick = {onClose}>Close</button>
+             <button onClick = {onClose}>X</button>
            </div>
-        <form action={submitAction}>
+           <h1>Contact-</h1>
+           <h2>Une demande particulère?<span className={classes.changeColor}> Parlons-en.</span></h2>
+        <form action={submitAction} className={classes.inputContainer}>
               <label htmlFor="prenom">Prenom</label>
               <input type="text" name = "surname" />
               
@@ -39,9 +41,15 @@ const Contact = ({onClose}) => {
 
               <label htmlFor="email">Email</label>
               <input type="text" name = "email" />
-              
+              <div className={classes.btnContainer}>
+              <div></div>
+           
               <button>Envoyer</button>
+              </div>
               {error && <p style = {{color : "red"}}>{error}</p>}
+
+
+
         </form>
         </section>
     );

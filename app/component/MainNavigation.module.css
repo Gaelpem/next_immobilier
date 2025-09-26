@@ -1,0 +1,45 @@
+
+   .header{
+       padding: 0.8rem 2rem;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin-bottom: 6.5rem;
+   
+   }
+   
+   .logo{
+       font-size: 3rem;
+       font-weight: 300;
+   }
+   
+   
+     .btn{
+       background-color: transparent;
+       border: none;
+       cursor: pointer;
+       font-size: 1rem;
+   
+     }
+   
+     .changeColor{
+          color : rgb(188, 188, 188); 
+     }
+   
+   
+     .section3{
+       padding: 0.8rem 2rem;
+       margin-bottom: 6.5rem;
+   }
+   
+   
+   .link{
+     color: black;
+     font-size: 1rem;
+     text-decoration: none;
+     transition: color 0.5s ease; /* Ajoute une transition douce */
+   }
+   
+   .link:hover {
+     color: rgb(175, 175, 175);
+   }

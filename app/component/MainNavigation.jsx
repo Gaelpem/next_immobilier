@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Heure from './Heure';
 import  Link from "next/link";
 import Contact from './Contact';
-
+import classes from './MainNavigation.module.css'
 const MainNavigation = () => {
     const [showContact , setShowContact] = useState(false)
 
@@ -18,13 +18,13 @@ const MainNavigation = () => {
     }
 
     return (
-        <header>
-            <h1>Shtib.</h1>
+        <header className={classes.header}>
+            <h1 className={classes.logo}>Shtib.</h1>
             <Heure/>
             <nav>
-                <Link href = '/'>home</Link>
+                <Link href = '/'  className={classes.link}>home</Link>
             </nav>
-            <button onClick={handleShowContact}>Contact - </button>
+            <button className = {classes.btn}  onClick={handleShowContact}>Contact - </button>
             {showContact && <Contact onClose={handleClose} />}
             
         </header>
