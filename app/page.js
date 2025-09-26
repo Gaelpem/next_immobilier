@@ -1,6 +1,7 @@
 
 import styles from './Home.module.css'
 import BiensList from "./component/ BiensList";
+import Footer from './component/Footer';
 
 
 export default function Home() {
@@ -32,6 +33,9 @@ export default function Home() {
        <BiensList/>
         </section>
 
+        <section className={styles.section4}>
+       <Footer/>
+        </section>
             </>
             
   );

@@ -15,18 +15,17 @@ export default function BienId({ params }) {
   // 👉 Index de l'image affichée
   const [index, setIndex] = useState(0);
 
-  // 👉 Navigation
 
   return (
     <section className={styles.imgDescription}>
-      {/* ===== Zone diapo ===== */}
+      {/*  Zone diapo  */}
       <div className={styles.image}>
         {/* Image principale */}
         <div className={styles.imgPrincipal}>
           <img src={images[index]} alt={`Image ${index + 1}`} />
         </div>
 
-        {/* Miniatures cliquables */}
+        {/* Petite image cliquable */}
         <div className={styles.items}>
 
           {images.map((img, i) => (
@@ -36,18 +35,18 @@ export default function BienId({ params }) {
               alt={`miniature ${i + 1}`}
               onClick={() => setIndex(i)}
               style={{
-  cursor: "pointer",
-  transition: "all 0.3s ease",
-  transform: index === i ? "scale(1.05)" : "scale(1)",
-  opacity: index === i ? 1 : 0.7,
-  filter: index === i ? "brightness(1)" : "brightness(0.9)",
+         cursor: "pointer",
+         transition: "all 0.3s ease",
+         transform: index === i ? "scale(1.05)" : "scale(1)",
+         opacity: index === i ? 1 : 0.7,
+         filter: index === i ? "brightness(1)" : "brightness(0.9)",
 }}
             />
           ))}
         </div>
       </div>
 
-      {/* ===== Zone description ===== */}
+      {/*  Zone description  */}
       <div className={styles.container}>
         <div className={styles.descriptions}>
           <h1 className={styles.description}>Descriptions</h1>
