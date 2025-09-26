@@ -19,7 +19,7 @@ const  BiensList = () => {
                     <img src={bien.image} alt={bien.location} />
                   </div>
       
-                  <div>
+                  <div className={classes.localisationDescrip}>
                     
                    <div className={classes.localisation}>
                       <h1>Localisation</h1>
