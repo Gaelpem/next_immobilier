@@ -1,6 +1,5 @@
 
 .section1{
-   
     padding: 0.8rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -81,3 +80,22 @@
 }
 
 
+
+@media (max-width: 769px) {
+  .section1 {
+    flex-direction: column;
+    padding: 1rem; /* Ajuster l'espacement sur mobile */
+    gap: 1rem; /* Espacement entre les éléments */
+  }
+  
+  .section1 h1 {
+    font-size: 3rem; /* Réduire la taille du titre sur mobile */
+ 
+  }
+  
+  .section1 p {
+    font-size: 0.9rem; /* Ajuster la taille du texte */
+    line-height: 1.6; /* Meilleure lisibilité */
+  }
+}
+ 

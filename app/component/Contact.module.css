@@ -9,6 +9,7 @@
     width: 45rem;
     padding: 8rem 1rem ;
     background-color: #e5e5e5;
+    z-index: 10;
   }
 .contact h1{
     font-size: 4rem;

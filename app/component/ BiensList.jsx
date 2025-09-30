@@ -1,5 +1,4 @@
 
-
 import { getBiens } from '@/lib/biens';
 import React from 'react';
 import Link from 'next/link';

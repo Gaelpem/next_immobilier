@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import classes from "./Contact.module.css"
+import {motion} from 'framer-motion';
 
 const Contact = ({onClose}) => {
 
@@ -24,7 +25,18 @@ const Contact = ({onClose}) => {
 
     return (
 
-         <section className={classes.contact}>
+         <motion.section 
+         className={classes.contact}
+         initial={{ x: '100%' }}
+         animate={{ x: 0 }}
+         exit={{ x: '100%' }}
+         transition={{ 
+             type: 'spring', 
+             damping: 25, 
+             stiffness: 200 
+         }}
+         onClick={(e) => e.stopPropagation()}
+         >
 
            <div className={classes.btnEspace}>
              <div></div>
@@ -51,7 +63,7 @@ const Contact = ({onClose}) => {
 
 
         </form>
-        </section>
+        </motion.section>
     );
    
 };

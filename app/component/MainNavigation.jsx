@@ -5,6 +5,7 @@ import Heure from './Heure';
 import  Link from "next/link";
 import Contact from './Contact';
 import classes from './MainNavigation.module.css'
+import HamburgerComponent from './HamburgerComponent.jsx';
 const MainNavigation = () => {
     const [showContact , setShowContact] = useState(false)
 
@@ -19,14 +20,23 @@ const MainNavigation = () => {
 
     return (
         <header className={classes.header}>
+
             <h1 className={classes.logo}>Shtib.</h1>
-            <Heure/>
+              <div className={classes.heures}>
+              <Heure/>
+              </div>
+            
             <nav>
                 <Link href = '/'  className={classes.link}>home</Link>
             </nav>
+
+            
             <button className = {classes.btn}  onClick={handleShowContact}>Contact - </button>
             {showContact && <Contact onClose={handleClose} />}
-            
+
+            <nav className={classes.burger}>
+                <HamburgerComponent/>
+            </nav>
         </header>
     );
 };

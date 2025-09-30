@@ -1,18 +1,18 @@
 "use client";
 
-import { useState, use } from "react"; // 👈 Importer 'use'
+import { useState, use } from "react"; 
 import { getBienId } from "@/lib/biens";
 import styles from "./page.module.css";
 
 export default function BienId({ params }) {
-  // 👉 Unwrapper la Promise params avec React.use()
+  //  Unwrapper la Promise params avec React.use()
   const { bienId } = use(params);
   const bien = getBienId(bienId);
 
-  // 👉 Regrouper toutes les images dans un tableau
+  //  Regrouper toutes les images dans un tableau
   const images = [bien.image, bien.image1, bien.image2, bien.image3];
 
-  // 👉 Index de l'image affichée
+  //  Index de l'image affichée
   const [index, setIndex] = useState(0);
 
 

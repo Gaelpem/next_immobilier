@@ -1,0 +1,19 @@
+
+.hamburgerWrapper {
+    position: relative;
+    z-index: 1001; /* Au-dessus du menu */
+}
+
+
+.burgerContact {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    padding: 8rem 1rem ;
+    background-color: #e3e3e3;
+  }
