@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, use } from "react"; 
+import { useState, use } from "react"; // Importer 'use'
 import { getBienId } from "@/lib/biens";
 import styles from "./page.module.css";
+import Footer from "../component/Footer";
 
 export default function BienId({ params }) {
   //  Unwrapper la Promise params avec React.use()
@@ -17,6 +18,7 @@ export default function BienId({ params }) {
 
 
   return (
+    <> 
     <section className={styles.imgDescription}>
       {/*  Zone diapo  */}
       <div className={styles.image}>
@@ -74,6 +76,9 @@ export default function BienId({ params }) {
           <p className={styles.detail}>{bien.detail}</p>
         </div>
       </div>
+     
     </section>
+    <Footer/>
+    </>
   );
 }

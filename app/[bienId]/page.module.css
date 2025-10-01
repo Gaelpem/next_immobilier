@@ -1,8 +1,6 @@
-
 .header{
     display: flex;
     justify-content: space-between;
-
 }
 
 .header h1{
@@ -12,18 +10,16 @@
 
 .header button{
     background: transparent;
-    border:none;
+    border: none;
 }
 
 .imgDescription{
    display: flex;
-   justify-content:  space-between;
+   justify-content: space-between;
    margin-top: -5rem;
    height: 100%;
    padding: 0.8rem 2rem;
-  
 }
-
 
 .container{
    width: 35%;
@@ -31,26 +27,26 @@
    justify-content: space-between;
    flex-direction: column;
    height: 47.4rem;
-
 }
+
 .container h1{
     font-weight: 400;
     font-family: "Inter", sans-serif; 
 }
+
 .container p{
     color: rgb(156, 156, 156);
 }
+
 .prixLieu{
     display: flex;
     justify-content: space-between;
-
 }
 
-.lieu, .priw{
+.lieu, .prix{
     display: flex;
     flex-direction: column;
 }
-
 
 .image{
     display: flex;
@@ -58,30 +54,102 @@
     flex-direction: column;
     height: 500px;
 }
+
 .imgPrincipal{
    width: 700px;
    height: 100%;
 }
-.items{
 
+.items{
    display: flex;
    justify-content: space-between;
-   width:700px;
+   width: 700px;
    height: 200px;
    margin-top: 3.5rem;
-
 }
 
 .items img{
     max-width: 200px;
-    object-fit:cover;
-  
+    object-fit: cover;
 }
 
-
 .image img{
-    width:100%;
-    object-fit:cover; 
-    height:100%;
+    width: 100%;
+    object-fit: cover; 
+    height: 100%;
+}
+
+/* Responsive horizontal */
+@media (max-width: 1024px){
+    .imgDescription{
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0.8rem 1rem;
+    }
+    
+    .imgPrincipal{
+        width: 100%;
+    }
+    
+    .items{
+        width: 100%; /* Les miniatures aussi */
+        height: 150px;
+    }
+    
+    
+    .items img{
+        max-width: 150px;
+    }
+    
+    .container{
+     
+      
+        width: 40%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px){
+    .header h1{
+        font-size: 2rem;
+    }
+    
+    .imgDescription{
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 0.5rem 1rem;
+        margin-top: 0;
+    }
+    
+    .imgPrincipal{
+        width: 350px;
+        height: 300px;
+    }
+    
+       
+    .items{
+        width: 100%;
+        height: 100px;
+        margin-top: 1.5rem;
+    }
+    
+    .items img{
+        max-width: 80px;
+    }
+    
+    .container{
+ 
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    
+    .container h1{
+        font-size: 1.2rem;
+    }
+    .container p{
+    
+        font-size: 1rem;
+    }
     
 }

@@ -22,17 +22,18 @@ const MainNavigation = () => {
         <header className={classes.header}>
 
             <h1 className={classes.logo}>Shtib.</h1>
-              <div className={classes.heures}>
-              <Heure/>
-              </div>
+
+            
             
             <nav>
                 <Link href = '/'  className={classes.link}>home</Link>
             </nav>
-
-            
+        
             <button className = {classes.btn}  onClick={handleShowContact}>Contact - </button>
             {showContact && <Contact onClose={handleClose} />}
+            <div className={classes.heures}>
+              <Heure/>
+              </div>
 
             <nav className={classes.burger}>
                 <HamburgerComponent/>

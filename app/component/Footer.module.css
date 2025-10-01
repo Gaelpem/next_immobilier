@@ -1,22 +1,42 @@
 .containerFooter{
-    padding: 0 2rem;
-    display: flex;
-    max-width: 100%;
-    justify-content: space-between;
-    align-items: center;
+  padding: 0 2rem;
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
- .logo{
-    font-size: 5rem;
+.logo{
+  font-size: 5rem;
 }
 
- .linker{
-    color: black;
-    font-size: 1rem;
-    text-decoration: none;
-    transition: color 0.5s ease; /* Ajoute une transition douce */
+.linker{
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+.linker:hover {
+  color: rgb(175, 175, 175);
+}
+
+/* Responsive mobile - reste horizontal */
+@media (max-width: 768px){
+  .containerFooter{
+      padding: 1rem;
+      gap: 1rem;
   }
   
-  .linker:hover {
-    color: rgb(175, 175, 175);
+  .logo{
+      font-size: 2.5rem;
   }
+  
+  .containerFooter h1:last-child{
+      font-size: 1rem;
+  }
+  
+  .linker{
+      font-size: 0.9rem;
+  }
+}

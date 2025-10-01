@@ -1,10 +1,4 @@
 
-.hamburgerWrapper {
-    position: relative;
-    z-index: 1001; /* Au-dessus du menu */
-}
-
-
 .burgerContact {
     display: flex;
     flex-direction: column;
@@ -16,4 +10,23 @@
     width: 100%;
     padding: 8rem 1rem ;
     background-color: #e3e3e3;
+    z-index: 999;
   }
+
+.logo{
+    display: inline;
+    top: -6.3rem ;
+    font-size: 2rem;
+    font-weight: 300;
+}
+ 
+.header{
+  
+    position: relative;
+    top: -6rem;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}  

@@ -12,8 +12,8 @@ export default function Home() {
      
             <section className={styles.section1}>
 
-            <h1>| Seigfried Vigier |</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero molestiae, dolorum ipsam quam nam enim eos perferendis facere saepe tenetur sunt cum vel excepturi voluptatum cumque. Earum eligendi beatae odit.</p>
+            <h1>Seigfried Vigier.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero molestiae, dolorum ipsam quam nam enim eos perferendis <span className={styles.decorationText}>facere saepe tenetur sunt cum vel excepturi voluptatum cumque. Earum eligendi beatae odit.</span></p>
            </section>
 
     
